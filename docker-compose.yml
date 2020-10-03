@@ -4,7 +4,7 @@ services:
     redis:
         container_name: dc-redis
         image: redis:alpine
-        nw-networks:
+        networks:
             - redis
         ports:
             - 6379:6379
